@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home|Page</title>
+    <title>Machine-Learning</title>
     <!--css stylesheet -->
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}"> 
         <!-- Bootstrap CSS -->
@@ -17,7 +17,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">IA</a>
+          <a class="navbar-brand" href="{{url_for('home')}}">IA</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,7 +37,7 @@
                   Courses
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Machine-Learning</a></li>
+                  <li><a class="dropdown-item" href="{{url_for('machine_learning')}}">Machine-Learning</a></li>
                   <li><a class="dropdown-item" href="#">Deep-Learning</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
@@ -70,6 +70,23 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+  <div class="d-flex">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Primary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Secondary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
   </div>
    
 </main>

@@ -37,7 +37,7 @@
                   Courses
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Machine-Learning</a></li>
+                  <li><a class="dropdown-item" href="{{url_for('machine_learning')}}"></a>Machine-Learning</a></li>
                   <li><a class="dropdown-item" href="#">Deep-Learning</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
@@ -74,44 +74,34 @@
   </div>
   <div class="card_page d-flex m-2 p-2">
     <div class="card" style="width: 18rem;">
-        <div class="card-header text-center alert-primary">
+        <div class="card-header text-center alert-success">
           Courses
         </div>
         <ul class="list-group list-group-flush text-center">
-          <li class="list-group-item"><a href="#" class="btn btn-primary">Machine Learning</a></li>
+          <li class="list-group-item"><a href="{{url_for('machine_learning')}}" class="btn btn-primary">Machine Learning</a></li>
           <li class="list-group-item"><a href="#" class="btn btn-primary">Deep Learning</a></li>
           <li class="list-group-item"><a href="#" class="btn btn-primary">Python Flask</a></li>
         </ul>
       </div>
       <div class="card" style="width: 18rem;">
-        <div class="card-header text-center alert-success">
-          Projects
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-header text-center alert-secondary">
-          Libraries
+        <div class="card-header text-center alert-info">
+          Libraries|Data
         </div>
         <ul class="list-group list-group-flush text-center">
-          <li class="list-group-item"><a href="#" class="btn btn-primary">Sklearn</a></li>
+          <li class="list-group-item"><a href="#" class="btn btn-primary">Scikit Sklearn</a></li>
           <li class="list-group-item"><a href="#" class="btn btn-primary">Numpy</a></li>
           <li class="list-group-item"><a href="#" class="btn btn-primary">Pandas</a></li>
         </ul>
       </div>
       <div class="card" style="width: 18rem;">
-        <div class="card-header text-center alert-warning">
-          Features
+        <div class="card-header text-center alert-secondary">
+          View & Images
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a href="#" class="btn btn-primary">Go</a></li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
+         <ul class="list-group list-group-flush text-center">
+           <li class="list-group-item"><a href="#" class="btn btn-success">Matplotlib</a></li>
+           <li class="list-group-item"><a href="#" class="btn btn-danger">Seaborn</a></li>
+           <li class="list-group-item"><a href="#" class="btn btn-primary">Keras/Tensor</a></li>
+         </ul>
       </div>
 
   </div>
